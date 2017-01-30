@@ -3,7 +3,9 @@ The following code was created using a Raspberry Pi, an 8 Relay Module, and Pyth
 for the purpose of growing plants.
 
 # Components/Hardware
+The following materials were used for this project:
+
 
 # Code
-
+Code for using the RPi.GPIO Python module can be found here: 
 
