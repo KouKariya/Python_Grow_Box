@@ -24,7 +24,7 @@ def hourlyLight():
 	global_hour = int(hour)
 	#print global_hour #TEST global var
 #
-def tempMeasure():
+#def tempMeasure():
 	#TODO add adafruit code for DHT sensor
 
 def main():
