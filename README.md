@@ -4,8 +4,18 @@ for the purpose of growing plants.
 
 # Components/Hardware
 The following materials were used for this project:
+*A Raspberry Pi
+*An 8 bit Power Relay
+*A breadboard
+*Growlight
+*PC fan(you can either buy a cheap one or harvest one off of an old PC)
+*5v water pump
 
+# Tools
+*Wire strippers/cutters
+*Electric tape
+*Multimeter(optional for testing/troubleshooting power currents)
 
 # Code
-Code for using the RPi.GPIO Python module can be found here: 
+Examples of code using the RPi.GPIO Python module can be found here: 
 

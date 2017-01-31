@@ -11,7 +11,7 @@ GPIO.setwarnings(False)
 #Setup pins 17, 18, and 27 for light, fan and pump respectively
 GPIO.setup(17, GPIO.OUT, initial=0)
 GPIO.setup(18, GPIO.OUT, initial=0)
-GPIO.setup(27, GPIO.OUT, initial=0)
+#GPIO.setup(27, GPIO.OUT, initial=0)
 
 #Start setting up Threads at some point to deal with the various tasks....
 def hourlyLight():
@@ -45,7 +45,7 @@ while True:
 	else:
 		GPIO.output(17, False)
 
-	if(global_hour >= 10 and global_hour <= 12): #Turn fan on
+	if(global_hour >= 10): #Turn fan on
 		GPIO.output(18, True)
 	else:
 		GPIO.output(18, False)
