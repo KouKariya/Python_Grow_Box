@@ -18,4 +18,4 @@ The following materials were used for this project:
 
 # Code
 Examples of code using the RPi.GPIO Python module can be found here: 
-
+Adafruit Python DHT library: https://github.com/adafruit/Adafruit_Python_DHT
