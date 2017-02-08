@@ -1,7 +1,7 @@
 import RPi.GPIO as GPIO
 import time
-#import sys
-#import Adafruit_DHT
+import sys
+import Adafruit_DHT
 
 #Additional libraries to be used for Adafruit script of the DHT sensor
 
@@ -13,6 +13,17 @@ GPIO.setup(17, GPIO.OUT, initial=0)
 GPIO.setup(18, GPIO.OUT, initial=0)
 #GPIO.setup(27, GPIO.OUT, initial=0)
 
+#Setup DHT sensor
+def tempMeasure():
+	sensor = Adafruit_DHT.DHT11
+	pin = 22 #TEST
+	humidity, temperature = Adafruit_DHT.read_retry(sensor, pin)
+	if humidity is not None and temperature is not None:
+		print 'Temp={0:0.1f}*C \nHumidity={1:0.1f}%'.format(temperature, humidity)
+	else:
+		print 'Failed to get reading, Try again!'
+
+
 #Start setting up Threads at some point to deal with the various tasks....
 def hourlyLight():
 	localtime = time.asctime( time.localtime(time.time() ))
@@ -23,9 +34,6 @@ def hourlyLight():
 	global global_hour
 	global_hour = int(hour)
 	#print global_hour #TEST global var
-#
-#def tempMeasure():
-	#TODO add adafruit code for DHT sensor
 
 def main():
 	global_hour = int()
@@ -35,6 +43,7 @@ def main():
 while True:
 	main()
 	print global_hour #TEST
+	tempMeasure()
 	#print value from tempMeasure
 
 #figure out way to write the if statement within main()
@@ -50,4 +59,4 @@ while True:
 	else:
 		GPIO.output(18, False)
 	#write if statement for pump
-	time.sleep(3600) #Wait for 3600 secs or 1 hr 
+	time.sleep(900) #Wait for 3600 secs or 1 hr 
