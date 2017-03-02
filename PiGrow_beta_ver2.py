@@ -58,5 +58,15 @@ while True:
 		GPIO.output(18, True)
 	else:
 		GPIO.output(18, False)
+	
 	#write if statement for pump
+	#create global variable for a counter for water pump
+	#if(global_hour ==10 and dryPlant == 2):
+		#GPIO.output(28, True)
+		#time.sleep(2)
+		#GPIO.output(28, False)
+		#dryPlant = 0
+	#else:
+		#dryPlant += 1
+	
 	time.sleep(900) #Wait for 3600 secs or 1 hr 
