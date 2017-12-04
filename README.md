@@ -6,10 +6,11 @@ for the purpose of growing plants.
 The following materials were used for this project:
 *A Raspberry Pi
 *An 8 bit Power Relay
-*A breadboard
+*A breadboard/Protoboard
 *Growlight
 *PC fan(you can either buy a cheap one or harvest one off of an old PC)
 *5v water pump
+*Housing or storage for the plant
 
 # Tools
 *Wire strippers/cutters
