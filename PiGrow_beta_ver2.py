@@ -3,8 +3,6 @@ import time
 import sys
 import Adafruit_DHT
 
-#Additional libraries to be used for Adafruit script of the DHT sensor
-
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 
